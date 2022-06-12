@@ -164,7 +164,7 @@ html{
   transition: opacity .3s ease-in-out;
 }
 .container1{
-  background-image: url(/img/pexels-pixabay-259588.jpg);
+  background-image: url(img/pexels-pixabay-259588.jpg);
   position: relative;
   max-width: 100%;
   width: 100%;
