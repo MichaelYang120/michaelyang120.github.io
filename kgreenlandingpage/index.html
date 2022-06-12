@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>K Green</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img class="img-logo" src="/img/greenlogo.png"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just a cold drink<br>It's <span>Healthy</span></h2>
+                <p>Burn more calories then ever! Drink one of our healthy smoothie and shead twice as much. Realize your goal, and see your results in no time!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <img src="/img/green.png" class="smoothie">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="/img/green.png" onclick="imgSlider('/img/green.png');changeCircleColor('#017143')"></li>
+            <li><img src="/img/purple.png" onclick="imgSlider('/img/purple.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="/img/pink.png" onclick="imgSlider('/img/pink.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="/img/facebook.png"></a></li>
+            <li><a href="#"><img src="/img/twitter.png"></a></li>
+            <li><a href="#"><img src="/img/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.smoothie').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector(".circle"); circle.style.background = color;
+        }
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
