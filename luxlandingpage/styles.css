@@ -1,0 +1,108 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.632);
+    line-height: 1.6;
+}
+
+#showcase {
+    background-image: url(/img/pexels-monstera-6311693.jpg);
+    background-size: cover;
+    background-position: center ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+/* https://www.pexels.com/photo/stylish-man-in-white-hoodie-standing-near-wall-6311693/ */
+}
+
+#showcase h1 {
+    font-size: 50px;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+#showcase .button { 
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    border: #000 2px solid;
+    padding: 10px 20px;
+    border-radius: 0px;
+    margin-top: 190px;
+    transform: ease;
+    font-weight: 600;
+}
+#showcase a{
+    text-transform: uppercase;
+}
+
+#showcase .button:hover{
+    background: #000;
+    color: #fff;
+}
+
+#section-a {
+    padding: 20px;
+    background: #D6DEE1;
+    color: #000;
+}
+#section-a p {
+    max-width: 75%;
+    margin: auto;
+
+}
+
+#section-b {
+    padding: 20px;
+    background: #f4f4f4;
+    text-align: center;
+}
+#section-c {
+    display: flex;
+}
+
+#section-c div {
+    padding: 20px;
+}
+
+#section-c .box1, #section-c .box3 {
+    background: #A99B8F;
+    color: #fff;
+}
+
+#section-c .box1, #section-c .box3 {
+    background: #f4f4f4;
+    color: #000;
+}
+.footer-info-container h1{
+    font-size: 1.2rem;
+}
+.footer-info-container p{
+    font-size: .6rem;
+}
+.footer-container{
+    padding: 30px 0 30px;
+    text-align: center;
+}
+.footer-icons{
+    font-size: 2rem;
+}
+.footer-icons i {
+    margin-right: 7px;
+    color: #000;
+}
